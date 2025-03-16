@@ -28,4 +28,8 @@ io.on("connection", (socket) => {
   });
 });
 
+app.get('/', (req, res)=> {
+  res.send("Server is ready.");
+})
+
 server.listen(5000, () => console.log("Server running on port http://localhost:5000"));
